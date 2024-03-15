@@ -12,7 +12,7 @@
     <a href="./stock_in.php"><img src="./imgs/stockin.ico" alt=""> Stock In</a>
     <a href="./stock_out.php"><img src="./imgs/stockout.ico" alt=""> Stock Out</a>
     <a href="./report.php"><img src="./imgs/report.ico" alt=""> Report</a>
-    <a href="./account_settings"><img src="./imgs/settings.ico" alt=""> Account Settings</a>
+    <a href="./account_settings.php"><img src="./imgs/settings.ico" alt=""> Account Settings</a>
 </div>
 
 <div class="end">

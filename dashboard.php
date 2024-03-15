@@ -25,6 +25,9 @@ include("sessions.php");
                 <div class="line"></div>
             </div>
 
+            <div class="right-content">
+            </div>
+
         </div>
 
     </div>
