@@ -9,6 +9,14 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+input {
+  outline-color: #7183cd;
+}
+
+select {
+  outline-color: #7183cd;
+}
+
 .login-container {
   width: 100%;
   display: flex;
@@ -322,4 +330,67 @@ body {
 .right-content table tr td {
   padding: 5px;
   font-weight: 500;
+}
+
+.right-content table tr td a {
+  padding: 5px 15px;
+  background: #7183cd;
+  color: #fff;
+  font-size: 0.8rem;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.right-content form {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.345);
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.right-content form label {
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.right-content form input {
+  padding: 6px;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1.3px solid black;
+}
+
+.right-content form select {
+  padding: 6px;
+  font-size: 0.9rem;
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1.3px solid black;
+}
+
+.right-content form button {
+  padding: 8px;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  width: 20%;
+  background: #7183cd;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.right-content form button:hover {
+  background: #9cadf3d0;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }

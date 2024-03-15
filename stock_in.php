@@ -27,7 +27,7 @@ include("sessions.php");
 
             <div class="right-content">
                 <div class="buttons">
-                    <a href="./add_product.php">Add a Stock In...</a>
+                    <a href="./add_stock_in.php">Add a Stock In...</a>
                     <a href="#" onclick="print()">Print...</a>
                 </div>
                 <table>
@@ -45,7 +45,12 @@ include("sessions.php");
                         while($row=mysqli_fetch_assoc($select)){
                     ?>
                     <tr>
-                        <td><?php echo $row['product_id'];?></td>
+                        <td><?php
+                        $product_id=$row['product_id'];
+                        $select=$con->query("SELECT * FROM `products` WHERE `product_id`='$product_id'");
+                        $see=mysqli_fetch_assoc($select);
+                        echo $see['product_name'];
+                         ?></td>
                         <td><?php echo $row['date'];?></td>
                         <td><?php echo $row['quantity'];?></td>
                         <td><?php echo $row['unit_price'];?></td>
