@@ -8,6 +8,7 @@
 
 <div class="links">
     <a href="./dashboard.php"><img src="./imgs/dashboard.ico" alt=""> Dashboard</a>
+    <a href="./users.php"><img src="./imgs/users.ico" alt=""> Users</a>
     <a href="./products.php"><img src="./imgs/products.ico" alt=""> Products</a>
     <a href="./stock_in.php"><img src="./imgs/stockin.ico" alt=""> Stock In</a>
     <a href="./stock_out.php"><img src="./imgs/stockout.ico" alt=""> Stock Out</a>

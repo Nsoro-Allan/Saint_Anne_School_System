@@ -266,3 +266,58 @@ body {
   margin-top: 10px;
   width: 100%;
 }
+
+.right-content .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 10px;
+}
+
+.right-content .buttons a {
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: #7183cd;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: 0.3s ease-in-out;
+}
+
+.right-content .buttons a:hover {
+  cursor: pointer;
+  background: #9cadf3d0;
+  transition: 0.3s ease-in-out;
+}
+
+.notification {
+  color: #7183cd;
+}
+
+.right-content table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1.5px solid #7183cd;
+  text-align: center;
+}
+
+.right-content table tr {
+  padding: 10px;
+}
+
+.right-content table tr:nth-child(odd) {
+  background: #cbcffc;
+}
+
+.right-content table tr th {
+  background: #7183cd;
+  color: #fff;
+  padding: 10px;
+}
+
+.right-content table tr td {
+  padding: 5px;
+}
