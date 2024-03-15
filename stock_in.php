@@ -56,8 +56,8 @@ include("sessions.php");
                         <td><?php echo $row['unit_price'];?></td>
                         <td><?php echo $row['total_price'];?></td>
                         <td>
-                            <a href="edit_stock_in.php?product_id=<?php echo $row['stock_in_id'];?>">Edit</a>
-                            <a href="delete_stock_in.php?product_id=<?php echo $row['stock_in_id'];?>"">Delete</a>
+                            <a href="edit_stock_in.php?stock_in_id=<?php echo $row['stock_in_id'];?>">Edit</a>
+                            <a href="delete_stock_in.php?stock_in_id=<?php echo $row['stock_in_id'];?>"">Delete</a>
                         </td>
                     </tr>
                     <?php        

@@ -32,7 +32,6 @@ include("sessions.php");
                 </div>
                 <table>
                     <tr>
-                        <th>#</th>
                         <th>Product Name</th>
                         <th>Actions</th>
                     </tr>
@@ -42,7 +41,6 @@ include("sessions.php");
                         while($row=mysqli_fetch_assoc($select)){
                     ?>
                     <tr>
-                        <td><?php echo $row['product_id'];?></td>
                         <td><?php echo $row['product_name'];?></td>
                         <td>
                             <a href="edit_product.php?product_id=<?php echo $row['product_id'];?>">Edit</a>
