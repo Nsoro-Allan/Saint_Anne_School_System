@@ -274,6 +274,7 @@ body {
   justify-content: flex-start;
   width: 100%;
   gap: 10px;
+  margin-bottom: 5px;
 }
 
 .right-content .buttons a {
@@ -320,4 +321,5 @@ body {
 
 .right-content table tr td {
   padding: 5px;
+  font-weight: 500;
 }

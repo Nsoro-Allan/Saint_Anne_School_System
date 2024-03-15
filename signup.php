@@ -56,7 +56,7 @@ include("connection.php");
 
                 <button type="submit" name="signup">SignUp</button>
 
-                <p>Already Have An Account? <a href="./index.php">SignIn.</a></p>
+                <p>Already Have An Account? <a href="./login.php">SignIn.</a></p>
             </form>
         </div>
     </div>
