@@ -48,8 +48,8 @@ include("sessions.php");
                         <td><?php echo $row['password'];?></td>
                         <td><?php echo $row['tel'];?></td>
                         <td>
-                            <a href="edit_users.php?product_id=<?php echo $row['user_id'];?>">Edit</a>
-                            <a href="delete_users.php?product_id=<?php echo $row['user_id'];?>"">Delete</a>
+                            <a href="edit_users.php?user_id=<?php echo $row['user_id'];?>">Edit</a>
+                            <a href="delete_users.php?user_id=<?php echo $row['user_id'];?>"">Delete</a>
                         </td>
                     </tr>
                     <?php        
