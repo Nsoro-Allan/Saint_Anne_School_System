@@ -1,3 +1,29 @@
+<?php
+session_start();
+include("connection.php");
+
+    if(isset($_POST['signup'])){
+        $username=mysqli_real_escape_string($con,$_POST['username']);
+        $password=mysqli_real_escape_string($con,$_POST['password']);
+        $tel=mysqli_real_escape_string($con,$_POST['tel']);
+
+        $insert=$con->query("INSERT INTO `users` (`username`,`password`,`tel`) VALUES ('$username','$password','$tel')");
+
+        if($insert){
+            header("location:index.php");
+        }
+
+        else{
+            echo
+            "
+                <script>
+                    alert('Failed to create account...');
+                </script>
+            ";
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,13 +46,13 @@
                 </div>
 
                 <label>Username:</label>
-                <input type="text" name="username" placeholder="Enter Your Username...">
+                <input type="text" name="username" placeholder="Enter Your Username..." required>
 
                 <label>Password:</label>
-                <input type="password" name="password" placeholder="Enter Your Password...">
+                <input type="password" name="password" placeholder="Enter Your Password..." required>
 
                 <label>Tel:</label>
-                <input type="tel" name="tel" placeholder="Enter Your Tel...">
+                <input type="tel" name="tel" placeholder="Enter Your Tel..." required>
 
                 <button type="submit" name="signup">SignUp</button>
 
