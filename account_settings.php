@@ -1,6 +1,37 @@
 <?php
 include("connection.php");
 include("sessions.php");
+
+$uname=$_SESSION['school_user'];
+
+// Select Data
+$select=$con->query("SELECT * FROM `users` WHERE `username`='$uname'");
+$row=mysqli_fetch_assoc($select);
+
+if(isset($_POST['update_account'])){
+    $username=mysqli_real_escape_string($con,$_POST['username']);
+    $password=mysqli_real_escape_string($con,$_POST['password']);
+    $update=$con->query("UPDATE `users` SET `username`='$username', `password`='$password' WHERE `username`='$uname'");
+
+    if($update){
+        $_SESSION['school_user']=$username;
+        echo
+        "
+            <script>
+                alert('You Have Updated your Account Successfully...');
+            </script>
+        ";
+    }
+    else{
+        echo
+        "
+            <script>
+                alert('Failed to update account...');
+            </script>
+        ";
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +57,13 @@ include("sessions.php");
             </div>
 
             <div class="right-content">
+                <form action="" method="post">
+                    <label>Current Username:</label>
+                    <input type="text" name="username" value="<?php echo $row['username'];?>">
+                    <label>Current Password:</label>
+                    <input type="text" name="password" value="<?php echo $row['password'];?>">
+                    <button type="submit" name="update_account">Update Account...</button>
+                </form>
             </div>
 
         </div>
