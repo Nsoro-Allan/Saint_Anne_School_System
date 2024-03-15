@@ -47,8 +47,8 @@ body {
   flex-direction: column;
   background: #fff;
   border-radius: 25px;
-  width: 80%;
-  padding: 10px 20px;
+  width: 75%;
+  padding: 28px 20px;
 }
 
 .login-right form .title {
@@ -96,13 +96,23 @@ body {
   background: #9cadf3;
   font-weight: bold;
   color: #fff;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in-out;
 }
 
 .login-right form button:hover {
   background: #9cadf3d0;
   cursor: pointer;
-  transition: 0.3s ease-in;
+  transition: 0.2s ease-in-out;
+}
+
+.login-right form p {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.login-right form p a {
+  color: #899ef4;
 }
 
 ::placeholder {

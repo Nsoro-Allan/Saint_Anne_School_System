@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saint Anne - Login</title>
+    <title>Saint Anne - SignUp</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./imgs/icon.ico" type="image/x-icon">
 </head>
@@ -15,7 +15,7 @@
         <div class="login-right">
             <form action="" method="post">
                 <div class="title">
-                    <h1>Saint Anne - Login</h1>
+                    <h1>Saint Anne - SignUp</h1>
                     <div class="line"></div>
                 </div>
 
@@ -25,9 +25,12 @@
                 <label>Password:</label>
                 <input type="password" name="password" placeholder="Enter Your Password...">
 
-                <button type="submit" name="login">Login</button>
+                <label>Tel:</label>
+                <input type="tel" name="tel" placeholder="Enter Your Tel...">
 
-                <p>Don't Have An Account? <a href="./signup.php">SignUp.</a></p>
+                <button type="submit" name="signup">SignUp</button>
+
+                <p>Already Have An Account? <a href="./index.php">SignIn.</a></p>
             </form>
         </div>
     </div>
