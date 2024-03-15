@@ -45,8 +45,6 @@ body {
 .login-right form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: #fff;
   border-radius: 25px;
   width: 80%;
@@ -58,6 +56,56 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid black;
+}
+
+.login-right form .title h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.login-right form .title .line {
+  padding: 3px;
+  width: 22%;
+  background: black;
+  border-radius: 50px;
+  margin-top: 3px;
+}
+
+.login-right form label {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.login-right form input {
+  margin-top: 5px;
+  font-size: 0.8rem;
+  padding: 10px;
   border-radius: 6px;
+  border: 1.5px solid black;
+  outline-color: #9cadf3;
+}
+
+.login-right form button {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #9cadf3;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.3s ease-in;
+}
+
+.login-right form button:hover {
+  background: #9cadf3d0;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+::placeholder {
+  color: black;
+  font-size: 0.8rem;
 }
