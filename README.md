@@ -38,4 +38,3 @@ Checkout the Report Page where the user can see the Sytem report and can print i
 ## Account Settings:
 Checkout the Account Settings Page where the user can update their credentials in the system.
 <img width="950" alt="account_settings" src="https://github.com/allancorp23/Saint_Anne_School_System/assets/135638821/dc535911-c8aa-4e54-85e6-eebaba56e395">
-
