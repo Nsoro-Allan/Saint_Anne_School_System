@@ -52,7 +52,7 @@ include("sessions.php");
                         echo $see['product_name'];
                          ?></td>
                         <td><?php echo $row['date'];?></td>
-                        <td><?php echo $row['quantity'];?></td>
+                        <td><?php echo $row['quantity'];?> KGS</td>
                         <td><?php echo $row['unit_price'];?></td>
                         <td><?php echo $row['total_price'];?></td>
                         <td>

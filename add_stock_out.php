@@ -15,23 +15,48 @@ if(isset($_POST['add_stock_out'])){
             </script>
         ";
     }
-
     else{
-
-    $insert=$con->query("INSERT INTO `stock_out` VALUES('','$product_id','$date','$quantity')");
-
-    if($insert){
-        header("Location: stock_out.php");
-    }
-    else{
-        echo
-        "
-            <script>
-                alert('Failed to add stock out...');
-            </script>
-        ";
-    }
-
+        // Check if quantity is available in stock_in table
+        $select_quantity = $con->query("SELECT quantity FROM stock_in WHERE product_id='$product_id'");
+        if(mysqli_num_rows($select_quantity) > 0){
+            $row = mysqli_fetch_assoc($select_quantity);
+            $available_quantity = $row['quantity'];
+            if($quantity > $available_quantity){
+                echo
+                "
+                    <script>
+                        alert('Insufficient quantity in stock...');
+                    </script>
+                ";
+            }
+            else{
+                // Update quantity in stock_in table
+                $new_quantity = $available_quantity - $quantity;
+                $update_stock_in = $con->query("UPDATE stock_in SET quantity='$new_quantity' WHERE product_id='$product_id'");
+                
+                // Add stock_out entry
+                $insert=$con->query("INSERT INTO `stock_out` VALUES('','$product_id','$date','$quantity')");
+                if($insert && $update_stock_in){
+                    header("Location: stock_out.php");
+                }
+                else{
+                    echo
+                    "
+                        <script>
+                            alert('Failed to add stock out...');
+                        </script>
+                    ";
+                }
+            }
+        }
+        else{
+            echo
+            "
+                <script>
+                    alert('Product not found in stock...');
+                </script>
+            ";
+        }
     }
 }
 ?>

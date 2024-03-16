@@ -50,7 +50,7 @@ include("sessions.php");
                         echo $see['product_name'];
                          ?></td>
                         <td><?php echo $row['date'];?></td>
-                        <td><?php echo $row['quantity'];?></td>
+                        <td><?php echo $row['quantity'];?> KGS</td>
                         <td>
                             <a href="delete_stock_out.php?stock_out_id=<?php echo $row['stock_out_id'];?>"">Delete</a>
                         </td>
