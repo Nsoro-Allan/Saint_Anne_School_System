@@ -1,6 +1,7 @@
 <?php
 include("connection.php");
 include("sessions.php");
+include("calculation.php");
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +27,33 @@ include("sessions.php");
             </div>
 
             <div class="right-content">
+                <div class="card-container">
+
+                    <div class="card">
+                        <img src="./imgs/icon.ico">
+                        <h4>Total Users Accounts:</h4>
+                        <a href="./users.php"></a>
+                    </div>
+
+                    <div class="card">
+                        <img src="./imgs/icon.ico">
+                        <h4>Total Products:</h4>
+                        <a href="./products.php"></a>
+                    </div>
+
+                    <div class="card">
+                        <img src="./imgs/icon.ico">
+                        <h4>Total Stock In Products:</h4>
+                        <a href="./stock_in.php"></a>
+                    </div>
+
+                    <div class="card">
+                        <img src="./imgs/icon.ico">
+                        <h4>Total Stock Out Products:</h4>
+                        <a href="./stock_out.php"></a>
+                    </div>
+
+                </div>
             </div>
 
         </div>

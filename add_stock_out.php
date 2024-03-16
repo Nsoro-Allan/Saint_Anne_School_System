@@ -25,7 +25,7 @@ if(isset($_POST['add_stock_out'])){
                 echo
                 "
                     <script>
-                        alert('Insufficient quantity in stock...');
+                        alert('Low quantity in stock...');
                     </script>
                 ";
             }
