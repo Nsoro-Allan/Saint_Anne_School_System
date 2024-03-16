@@ -32,25 +32,25 @@ include("calculation.php");
                     <div class="card">
                         <img src="./imgs/icon.ico">
                         <h4>Total Users Accounts:</h4>
-                        <a href="./users.php"></a>
+                        <a href="./users.php"><?php echo $total_users;?></a>
                     </div>
 
                     <div class="card">
                         <img src="./imgs/icon.ico">
                         <h4>Total Products:</h4>
-                        <a href="./products.php"></a>
+                        <a href="./products.php"><?php echo $total_products;?></a>
                     </div>
 
                     <div class="card">
                         <img src="./imgs/icon.ico">
                         <h4>Total Stock In Products:</h4>
-                        <a href="./stock_in.php"></a>
+                        <a href="./stock_in.php"><?php echo $total_stock_in_products;?></a>
                     </div>
 
                     <div class="card">
                         <img src="./imgs/icon.ico">
                         <h4>Total Stock Out Products:</h4>
-                        <a href="./stock_out.php"></a>
+                        <a href="./stock_out.php"><?php echo $total_stock_out_products;?></a>
                     </div>
 
                 </div>

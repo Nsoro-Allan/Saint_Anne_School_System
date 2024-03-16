@@ -17,7 +17,7 @@
 </div>
 
 <div class="end">
-    <p><?php echo $_SESSION['school_user'];?></p>
+    <p>Hi, <?php echo $_SESSION['school_user'];?></p>
     <a href="./logout.php">Logout</a>
 </div>
 
