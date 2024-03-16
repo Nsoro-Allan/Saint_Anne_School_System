@@ -47,8 +47,8 @@ include("sessions.php");
                     <tr>
                         <td><?php
                         $product_id=$row['product_id'];
-                        $select=$con->query("SELECT * FROM `products` WHERE `product_id`='$product_id'");
-                        $see=mysqli_fetch_assoc($select);
+                        $view=$con->query("SELECT * FROM `products` WHERE `product_id`='$product_id'");
+                        $see=mysqli_fetch_assoc($view);
                         echo $see['product_name'];
                          ?></td>
                         <td><?php echo $row['date'];?></td>
