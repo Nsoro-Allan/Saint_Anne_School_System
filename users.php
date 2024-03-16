@@ -31,7 +31,6 @@ include("sessions.php");
                 </div>
                 <table>
                     <tr>
-                        <th>#</th>
                         <th>Username</th>
                         <th>Password</th>
                         <th>Tel</th>
@@ -43,7 +42,6 @@ include("sessions.php");
                         while($row=mysqli_fetch_assoc($select)){
                     ?>
                     <tr>
-                        <td><?php echo $row['user_id'];?></td>
                         <td><?php echo $row['username'];?></td>
                         <td><?php echo $row['password'];?></td>
                         <td><?php echo $row['tel'];?></td>
