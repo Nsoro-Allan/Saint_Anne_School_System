@@ -52,7 +52,6 @@ include("sessions.php");
                         <td><?php echo $row['date'];?></td>
                         <td><?php echo $row['quantity'];?></td>
                         <td>
-                            <a href="edit_stock_out.php?stock_out_id=<?php echo $row['stock_out_id'];?>">Edit</a>
                             <a href="delete_stock_out.php?stock_out_id=<?php echo $row['stock_out_id'];?>"">Delete</a>
                         </td>
                     </tr>
